@@ -1,0 +1,257 @@
+body {
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: pink;
+}
+
+/* header ----------------------------------------------------- */
+header {
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 200px;
+}
+
+header h1 {
+    margin-top: 50px;
+}
+
+.header-lists {
+    float: right;
+}
+
+.header-lists li {
+    float: left;
+    margin-left: 30px;
+}
+
+.toTop {
+    font-size: 30px;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 30px;
+    
+}
+
+/* space ----------------------------------------------------- */
+.space {
+    height: 6px;
+    margin: 10px 0;
+    background-color: rgba(255, 0, 234, 0.589);
+}
+
+/* main ----------------------------------------------------- */
+main {
+    width: 60%;
+    height: 3100px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+main section {
+    border: 3px solid pink;
+    width: 45%;
+    height: auto;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.title-btn {
+    padding-top: 50px;
+    opacity: 0.7;
+}
+
+main section:nth-of-type(1),
+main section:nth-of-type(3),
+main section:nth-of-type(5) {
+    width: 45%;
+    opacity: 0;
+    -webkit-transform: translate(-400px, 0);
+    -webkit-transition: all 2000ms;
+}
+
+main section:nth-of-type(2),
+main section:nth-of-type(4) {
+    width: 45%;
+    opacity: 0;
+    -webkit-transform: translate(400px, 0);
+    -webkit-transition: all 2000ms;
+}
+
+/* end */
+main section:nth-of-type(6),
+main section:nth-of-type(7) { 
+    width: 45%;
+    opacity: 0;
+    -webkit-transform: translate(-400px, 0);
+    -webkit-transition: all 4000ms;
+}
+
+main section:nth-of-type(8) {
+    width: 45%;
+    opacity: 0;
+    -webkit-transform: translate(400px, 0);
+    -webkit-transition: all 4000ms;
+}
+/* end */
+
+main section:nth-of-type(1).active,
+main section:nth-of-type(3).active,
+main section:nth-of-type(5).active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+}
+
+main section:nth-of-type(2).active,
+main section:nth-of-type(4).active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+}
+
+/* end */
+main section:nth-of-type(6).active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transform: translate(-200px, 0);
+}
+
+main section:nth-of-type(7).active {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transform: translate(-310px, 0);
+}
+
+main section:nth-of-type(8).active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transform: translate(300px, 0);
+}
+/* end */
+
+section a {
+    margin-left: 10px;
+}
+
+/* スライドクラス */
+.slide-btn {
+    -webkit-transition: .5s;
+}
+
+.s-asmr {
+    margin-top: 10px;
+}
+
+.p-asmr {
+    margin: 0 6px;
+}
+
+.s-recommended1 {
+    margin-top: 300px;
+}
+
+.s-recommended2 {
+    margin-top: 900px;
+}
+
+.s-recomended3 {
+    margin-top: 1500px;
+}
+
+.s-recomended4 {
+    margin-top: 2100px;
+}
+
+.s-end {
+    width: 7%;
+    margin-top: 2700px;
+}
+
+.s-end2 {
+    margin-top: 2800px;
+}
+
+.s-end3 {
+    margin-top: 2900px;
+}
+
+.s-end4 {
+    
+}
+
+.list1 {
+    padding-right: 5px;
+}
+
+.list2 {
+    padding-right: 5px;
+}
+
+iframe {
+    margin-left: -20px;
+    width: 100%;
+}
+
+.p-end {
+    border-style: none;
+    text-align: center;
+}
+
+.slide-text {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 3000px;
+    float: right;
+}
+
+.slide-text span {
+    opacity: 0;
+    -webkit-transform: .10s ease-in-out;
+}
+
+/* footer ----------------------------------------------------- */
+footer {
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 200px;
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.footer-lists li {
+    float: left;
+    margin-left: 30px;
+}
